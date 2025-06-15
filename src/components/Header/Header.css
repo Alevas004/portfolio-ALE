@@ -1,0 +1,9 @@
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+}
+.header-nav{
+  font-size: 1.2rem;
+}

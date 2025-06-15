@@ -1,0 +1,83 @@
+.educacion-icon{ 
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.icon {
+    background-color: #f0f0f0;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+    box-shadow: -2px -1px 1px var(--color-texto);
+}
+.card-profile__floating-button3 {
+  top: 0px;
+  right: 0px;
+  color: var(--color-texto);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(190, 190, 190, 0.479);
+  cursor: pointer;
+  background-color: transparent;
+}
+.down {
+  visibility: visible;
+}
+.up {
+  visibility: hidden;
+  position: absolute;
+}
+
+
+.resume-category__header{
+    width: 100%;
+    padding-inline: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.timeline-list {
+  position: relative;
+  padding-left: 65px; 
+  list-style: none;
+}
+
+.timeline-list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  background: var(--color-texto); 
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+.timeline-item2{
+    position: relative;
+    margin-left: 30px; 
+    color: rgb(0, 0, 0);
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -40px;
+  width: 10px;
+  height: 10px;
+  background: radial-gradient(circle, #ffffff 30%, var(--color-texto) 70%);
+  border-radius: 50%;
+}

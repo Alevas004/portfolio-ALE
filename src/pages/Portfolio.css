@@ -1,0 +1,99 @@
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.portfolio-title {
+    font-size: 2rem;
+}
+.portfolio-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.portfolio-item_description{
+    color: rgb(251, 242, 213);
+    text-transform: uppercase;
+    font-size: small;
+}
+.portfolio-item_title{
+    font-size: 1.5rem;
+}
+
+.portfolio-link:hover {
+    color: var(--color-texto);
+}
+
+.errors{
+    color: red;
+    font-size: .8rem;
+    text-align: center;
+ 
+}
+
+.portfolio-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.271);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: 250px;
+    height: 150px;
+    
+}
+.portfolio-item_bgimg{
+    background-image: url('/poke-project.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.portfolio-item_bgimg2{
+    background-image: url('/weather-project.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.portfolio-item_bgimg3{
+    background-image: url('/user-project.webp');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.portfolio-item_bgimg4{
+    background-image: url('/rickandmorty-project.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.portfolio-item_bgimg5{
+    background-image: url('/smartmuscle-project.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.portfolio-item_bgimg5:hover, .portfolio-item_bgimg4:hover, .portfolio-item_bgimg3:hover,
+.portfolio-item_bgimg2:hover, .portfolio-item_bgimg:hover {
+    transform: scale(1.01);
+    transition: transform 0.9s ease;
+    background-position: center;
+   background-size: 130%;
+
+}
+
+
+@media (min-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(3, minmax(auto, 1fr));
+    
+  }
+}
