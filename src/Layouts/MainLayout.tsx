@@ -11,11 +11,16 @@ const MainLayout: React.FC = () => {
   return (
     <>
       <div className="main-layout ">
-        
-          <Link to="https://api.whatsapp.com/send/?phone=393513661457&text=" target="_blank" rel="noopener noreferrer" className="call-to-action">
+        <div className="call-to-action">
+          <Link
+            to="https://api.whatsapp.com/send/?phone=393513661457&text="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaWhatsapp size={30} color="white" />
           </Link>
-       
+        </div>
+
         <div className="main-content">
           <div className="main-content_profile">
             <CardProfile />
