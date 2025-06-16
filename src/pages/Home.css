@@ -7,10 +7,32 @@
   overflow-x: hidden;
   overscroll-behavior: none;
 }
+.btn-info {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: white;
+  background: linear-gradient(
+    270deg,
+    rgb(0, 0, 0),
+    rgb(255, 157, 0),
+    rgb(2, 2, 2),
+    rgb(255, 157, 0),
+    rgb(0, 0, 0),
+    rgb(255, 191, 0),
+    rgb(0, 0, 0),
+    rgb(255, 157, 0)
+  );
+  background-size: 1400% 1400%;
+  animation: gradientMove 10s linear infinite;
+}
 #logo-mask {
   background: white;
   mask-image: url(/fullstack-logo.svg);
   mask-position: center 13%;
   mask-repeat: no-repeat;
   mask-size: clamp(5000vh, 300vh, 0vh);
+}
+#text-ale {
+  opacity: 0;
+  visibility: hidden;
 }

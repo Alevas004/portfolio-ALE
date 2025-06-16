@@ -4,6 +4,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import TextWelcome from "../components/TextWelcome/TextWelcome";
+import { SplitText } from "gsap/all";
 
 const Home = () => {
   const [touched, setTouched] = useState(false);
@@ -12,7 +14,7 @@ const Home = () => {
     setTouched((prev) => !prev);
   };
 
-  gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollTrigger, SplitText);
 
   useEffect(() => {
     const tl = gsap.timeline({
@@ -25,7 +27,24 @@ const Home = () => {
       .to("#logo", { opacity: 0 }, "<")
       .to("#footer-logo", { opacity: 0 }, "<")
       .to("#logo-mask", { maskSize: "clamp(20vh, 25%, 30vh)" }, 0.15)
-      .to("#content-outside", { opacity: 1, visibility: "visible" }, 0.5);
+      .to("#content-outside", { opacity: 1, visibility: "visible" }, 0.5)
+      
+  tl.to("#text-ale", {
+  visibility: "visible",
+  opacity: 1,
+  duration: 0.5,
+  onStart: () => {
+    // Ejecutamos la animación SIN meterla en el timeline
+    requestAnimationFrame(() => {
+      const split = new SplitText("#heading", { type: "chars" });
+      gsap.from(split.chars, {
+        y: 500,
+        autoAlpha: 0,
+        stagger: 0.07,
+      });
+    });
+  },
+});
   }, []);
 
   return (
@@ -150,8 +169,8 @@ const Home = () => {
                   to="/about"
                   className=" text-white right-[calc(10%)] top-0  group-hover:group-hover:opacity-100 transition-all duration-300 "
                 >
-                  <button type="button" className="text-white">
-                    INFO
+                  <button type="button" className="btn-info">
+                   + INFO
                   </button>
                   {/* Imagen preview */}
                   <div className="absolute top-0 right-0 mt-2 w-64 h-40 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 shadow-xl">
@@ -165,8 +184,11 @@ const Home = () => {
               </div>
             </header>
           </div>
-          <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-[100px] w-[200px] flex items-center justify-center text-black">
-            INFO
+          <div
+            id="text-ale"
+            className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-[100px] w-[350px] flex items-center justify-center text-black"
+          >
+            <TextWelcome />
           </div>
         </div>
       </div>

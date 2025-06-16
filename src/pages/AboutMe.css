@@ -35,7 +35,7 @@
 .line {
   width: 50px;
   height: 5px;
-  background-color: rgb(255, 88, 88);
+  background-color: var(--color-texto);
 }
 
 .about-me__content {

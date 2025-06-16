@@ -81,3 +81,10 @@
   background: radial-gradient(circle, #ffffff 30%, var(--color-texto) 70%);
   border-radius: 50%;
 }
+
+.btn-cv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: .9rem;
+}

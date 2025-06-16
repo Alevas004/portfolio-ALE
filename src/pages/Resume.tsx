@@ -72,19 +72,75 @@ const Resume = () => {
           <div className={isLanguages ? "down" : "up"}>
             <ol className="timeline-list">
               <li className="timeline-item">
-                <h4 className="timeline-item-title">Spanish</h4>
-                <p className="timeline-text">Mother tongue</p>
-                <span className="text-gray-600">CEFR: C2</span>
+                <div className="btn-cv">
+                  <div>
+                    <h4 className="timeline-item-title">Spanish</h4>
+                    <p className="timeline-text">Mother tongue</p>
+                    <span className="text-gray-600">CEFR: C2</span>
+                  </div>
+                  <div className="flex-grow border-t border-gray-400 mx-2" />
+                  <div>
+                    <button
+                      onClick={() => {
+                        const link = document.createElement("a");
+                        link.href = "/C.V Alejandro Vasquez Español.pdf";
+                        link.download = "C.V Alejandro Vasquez Español.pdf";
+                        link.click();
+                      }}
+                      className="btn"
+                    >
+                      Download CV
+                    </button>
+                  </div>
+                </div>
               </li>
               <li className="timeline-item">
-                <h4 className="timeline-item-title">English</h4>
-                <p className="timeline-text">Proficency</p>
-                <span className="text-gray-600">CEFR: C1</span>
+                <div className="btn-cv">
+                  <div>
+                    <h4 className="timeline-item-title">English</h4>
+                    <p className="timeline-text">Proficency</p>
+                    <span className="text-gray-600">CEFR: C1</span>
+                  </div>
+                  <div className="flex-grow border-t border-gray-400 mx-2" />
+                  <div>
+                    <button
+                      onClick={() => {
+                        const link = document.createElement("a");
+                        link.href = "/Resume Alejandro Vasquez English.pdf";
+                        link.download = "Resume Alejandro Vasquez English.pdf";
+                        link.click();
+                      }}
+                      className="btn"
+                    >
+                      Download CV
+                    </button>
+                  </div>
+                </div>
               </li>
               <li className="timeline-item">
-                <h4 className="timeline-item-title">Italian</h4>
-                <p className="timeline-text">Intermedium</p>
-                <span className="text-gray-600">CEFR: B2</span>
+                <div className="btn-cv">
+                  <div>
+                    <h4 className="timeline-item-title">Italian</h4>
+                    <p className="timeline-text">Intermedium</p>
+                    <span className="text-gray-600">CEFR: B2</span>
+                  </div>
+                  <div className="flex-grow border-t border-gray-400 mx-2" />
+                  <div>
+                    <button
+                      onClick={() => {
+                        const link = document.createElement("a");
+                        link.href =
+                          "/C.V Alejandro Vasquez Lingua italiana.pdf";
+                        link.download =
+                          "C.V Alejandro Vasquez Lingua italiana.pdf";
+                        link.click();
+                      }}
+                      className="btn"
+                    >
+                      Download CV
+                    </button>
+                  </div>
+                </div>
               </li>
               <li className="timeline-item">
                 <h4 className="timeline-item-title">French</h4>
