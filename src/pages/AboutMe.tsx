@@ -1,25 +1,47 @@
 import "./AboutMe.css";
-import { FaLaptopCode } from "react-icons/fa";
-import { FaDatabase } from "react-icons/fa";
-import { FaReact } from "react-icons/fa";
+
+import {
+  FaReact,
+  FaAws,
+  FaWordpress,
+  FaDatabase,
+  FaNodeJs,
+  FaLaptopCode,
+  FaGithubSquare,
+  FaCloudflare,
+  FaDigitalOcean,
+} from "react-icons/fa";
 import { RiNextjsLine } from "react-icons/ri";
-import { BiLogoPostgresql } from "react-icons/bi";
-import { SiTailwindcss } from "react-icons/si";
-import { FaAws } from "react-icons/fa";
-import { FaNodeJs } from "react-icons/fa";
+import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
+import {
+  SiTailwindcss,
+  SiNetlify,
+  SiGoogletagmanager,
+  SiGoogleanalytics,
+  SiBrevo,
+  SiAdobepremierepro,
+  SiAdobeaftereffects,
+  SiCanva,
+  SiExpress,
+} from "react-icons/si";
+
 import { MdSettingsApplications } from "react-icons/md";
 
 const AboutMe = () => {
   return (
     <>
-    <div className="about-me__title">
-      <h2 className="title-main">About Me</h2>
-      <div className="line"></div>
-    </div>
+      <div className="about-me__title">
+        <h2 className="title-main">About Me</h2>
+        <div className="line"></div>
+      </div>
       <section className="about-me">
         <div className="about-me__content">
           <p>
-            I offer professional support in web development and digital environments, combining strong technical skills with excellent command of English, Italian and Spanish. My ability to adapt quickly, attention to detail, and effective communication across languages allow me to collaborate efficiently in international and
+            I offer professional support in web development and digital
+            environments, combining strong technical skills with excellent
+            command of English, Italian and Spanish. My ability to adapt
+            quickly, attention to detail, and effective communication across
+            languages allow me to collaborate efficiently in international and
             multilingual contexts.
           </p>
         </div>
@@ -67,12 +89,64 @@ const AboutMe = () => {
             <p>Tailwind CSS</p>
           </div>
           <div className="card">
+            <SiExpress size={50} />
+            <p>Express.js</p>
+          </div>
+          <div className="card">
             <FaAws size={50} />
             <p>AWS</p>
           </div>
           <div className="card">
             <MdSettingsApplications size={50} />
             <p>GSAP</p>
+          </div>
+          <div className="card">
+            <FaWordpress size={50} />
+            <p>WordPress</p>
+          </div>
+          <div className="card">
+            <BiLogoTypescript size={50} />
+            <p>TypeScript</p>
+          </div>
+          <div className="card">
+            <FaGithubSquare size={50} />
+            <p>GitHub</p>
+          </div>
+          <div className="card">
+            <FaCloudflare size={50} />
+            <p>Cloudflare</p>
+          </div>
+          <div className="card">
+            <SiNetlify size={50} />
+            <p>Netlify</p>
+          </div>
+          <div className="card">
+            <FaDigitalOcean size={50} />
+            <p>DigitalOcean</p>
+          </div>
+          <div className="card">
+            <SiGoogletagmanager size={50} />
+            <p>Google Tag Manager</p>
+          </div>
+          <div className="card">
+            <SiGoogleanalytics size={50} />
+            <p>Google Analytics</p>
+          </div>
+          <div className="card">
+            <SiBrevo size={50} />
+            <p>Brevo</p>
+          </div>
+          <div className="card">
+            <SiAdobepremierepro size={50} />
+            <p>Adobe Premiere Pro</p>
+          </div>
+          <div className="card">
+            <SiAdobeaftereffects size={50} />
+            <p>Adobe After Effects</p>
+          </div>
+          <div className="card">
+            <SiCanva size={50} />
+            <p>Canva</p>
           </div>
         </div>
       </div>
