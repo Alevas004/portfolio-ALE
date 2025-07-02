@@ -29,7 +29,12 @@
 .portfolio-link:hover {
     color: var(--color-texto);
 }
-
+.portfolio-front, .portfolio-front {
+    margin-top: 1rem;
+}
+.portfolio-item_technologies{
+    font-size: .8rem;
+}
 .errors{
     color: red;
     font-size: .8rem;
@@ -81,8 +86,14 @@
     background-position: center;
     border-radius: 10px;
 }
+.portfolio-item_bgimg6{
+    background-image: url('/pet-center-app.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
 .portfolio-item_bgimg5:hover, .portfolio-item_bgimg4:hover, .portfolio-item_bgimg3:hover,
-.portfolio-item_bgimg2:hover, .portfolio-item_bgimg:hover {
+.portfolio-item_bgimg2:hover, .portfolio-item_bgimg:hover, .portfolio-item_bgimg6:hover {
     transform: scale(1.01);
     transition: transform 0.9s ease;
     background-position: center;
@@ -90,6 +101,10 @@
 
 }
 
+.portfolio-item_bgimgB{ 
+    background-color: black;
+     border-radius: 10px;
+}
 
 @media (min-width: 768px) {
   .portfolio-grid {
