@@ -6,6 +6,7 @@ import { FaPeopleGroup } from "react-icons/fa6";
 import { GiMagicPortal } from "react-icons/gi";
 import { FaPaw, FaHotel } from "react-icons/fa";
 import { IoStorefrontOutline } from "react-icons/io5";
+import { BsCart4 } from "react-icons/bs";
 
 const Portfolio = () => {
   return (
@@ -112,6 +113,24 @@ const Portfolio = () => {
       <div className="portfolio-back">
         <h3>BACK-END</h3>
         <div className="portfolio-grid">
+          <NavLink
+            to="https://github.com/Alevas004/store-api"
+            className="portfolio-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="portfolio-item_bgimgB">
+              <div className="portfolio-item">
+                <BsCart4 />
+
+                <p className="portfolio-item_title">Marketplace</p>
+                <p className="portfolio-item_description">RESTful API</p>
+                <p className="portfolio-item_technologies">
+                  Node.js, Express, Sequelize and PostgreSQL
+                </p>
+              </div>
+            </div>
+          </NavLink>
           <NavLink
             to="https://pet-center-cyan.vercel.app"
             className="portfolio-link"
