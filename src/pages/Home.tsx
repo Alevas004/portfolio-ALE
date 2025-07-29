@@ -186,7 +186,7 @@ const Home = () => {
           </div>
           <div
             id="text-ale"
-            className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-[100px] w-[350px] flex items-center justify-center text-black"
+            className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-fit flex items-center justify-center text-black"
           >
             <TextWelcome />
           </div>
