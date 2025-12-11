@@ -89,7 +89,6 @@ const Portfolio = () => {
               </div>
             </div>
           </NavLink>
-
           <NavLink
             to="https://user-crup-app.netlify.app"
             className="portfolio-link"
@@ -103,6 +102,22 @@ const Portfolio = () => {
                 <p className="portfolio-item_title">USER CRUD</p>
                 <p className="portfolio-item_description">Web app</p>
                 <p className="errors">Backend off</p>
+              </div>
+            </div>
+          </NavLink>
+          <NavLink
+            to="https://xiomarasanchez.vercel.app"
+            className="portfolio-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="portfolio-item_bgimg7">
+              <div className="portfolio-item">
+                <FaPeopleGroup />
+
+                <p className="portfolio-item_title">Multi-website</p>
+                <p className="portfolio-item_description">Web app</p>
+                
               </div>
             </div>
           </NavLink>
@@ -176,6 +191,24 @@ const Portfolio = () => {
                 <IoStorefrontOutline />
 
                 <p className="portfolio-item_title">Ecommerce</p>
+                <p className="portfolio-item_description">RESTful API</p>
+                <p className="portfolio-item_technologies">
+                  Node.js, Express, Sequelize and PostgreSQL
+                </p>
+              </div>
+            </div>
+          </NavLink>
+          <NavLink
+            to="https://github.com/Alevas004/xio"
+            className="portfolio-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="portfolio-item_bgimgB">
+              <div className="portfolio-item">
+                <BsCart4 />
+
+                <p className="portfolio-item_title">Multi-website</p>
                 <p className="portfolio-item_description">RESTful API</p>
                 <p className="portfolio-item_technologies">
                   Node.js, Express, Sequelize and PostgreSQL

@@ -8,7 +8,7 @@ import "./CardProfile.css";
 import { useState } from "react";
 
 const CardProfile = () => {
-  const [isDown, setIsDown] = useState(true);
+  const [isDown, setIsDown] = useState(false);
   return (
     <section className="card-profile">
       <div>
