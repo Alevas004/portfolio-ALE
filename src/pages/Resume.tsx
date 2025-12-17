@@ -59,7 +59,7 @@ const Resume = () => {
               <div className="icon">
                 <LuLanguages size={20} />
               </div>
-              <h3 className="text-2xl">Languages</h3>
+              <h3 className="text-2xl">Curriculum vitae</h3>
             </div>
             <button
               type="button"
